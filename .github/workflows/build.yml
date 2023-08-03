@@ -1,23 +1,36 @@
-name: FLC Pages Build
+name: FLC Pages Build & Deploy Workflow
 
 on:
   push:
     branches:
       - main
-      
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v2
-        - name: Setup Node
-          uses: actions/setup-node@v1
+				# checkout: does a `git checkout` of this repo so it can work with it
+				# https://github.com/marketplace/actions/checkout
+				- name: Checkout
+					uses: actions/checkout@v3
+
+				# setup-node: installs Nodejs
+				# https://github.com/marketplace/actions/setup-node-js-environment
+				- name: Setup Node.js environment
+					uses: actions/setup-node@v3
           with:
-            node-version: '16.x'
+            node-version: '20.x'
+
+				# install dependencies
         - run: npm ci
+
+				# build the static site
         - run: npm run build
-        - name: Deploy
+
+				- name: Deploy to GitHub Pages
+					# actions-gh-pages: deploys static site to GitHub Pages
+					# https://github.com/marketplace/actions/github-pages-action
           uses: peaceiris/actions-gh-pages@v3
           with:
             deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-            publish_dir: ./dist
+            publish_dir: ./_site
