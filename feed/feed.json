@@ -1,0 +1,22 @@
+{
+	"version": "https://jsonfeed.org/version/1.1",
+	"title": "FLC Pages",
+	"language": "en",
+	"home_page_url": "https://flc-pages.github.io/",
+	"feed_url": "https://flc-pages.github.io/feed/feed.json",
+	"description": "Rants, opinions, technical posts, and maybe some tips.",
+	"author": {
+		"name": "Fernando L. Canizo",
+		"url": "https://flc-pages.github.io/about-me/"
+	},
+	"items": [
+		{
+			"id": "https://flc-pages.github.io/blog/2023.08.02,hello-post/",
+			"url": "https://flc-pages.github.io/blog/2023.08.02,hello-post/",
+			"title": "Hello Post!",
+			"content_html": "<p>Just a simple dummy post to check stuff is working. Most probably to be removed once I get this fully setup.</p>\n",
+			"date_published": "2023-08-02T00:00:00Z"
+		}
+		
+	]
+}

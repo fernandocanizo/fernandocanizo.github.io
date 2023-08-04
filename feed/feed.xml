@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>FLC Pages</title>
+	<subtitle>Rants, opinions, technical posts, and maybe some tips.</subtitle>
+	<link href="https://flc-pages.github.io/feed/feed.xml" rel="self"/>
+	<link href="https://flc-pages.github.io/"/>
+	<updated>2023-08-02T00:00:00Z</updated>
+	<id>https://flc-pages.github.io/</id>
+	<author>
+		<name>Fernando L. Canizo</name>
+		<email>fernandocanizo@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>Hello Post!</title>
+		<link href="https://flc-pages.github.io/blog/2023.08.02,hello-post/"/>
+		<updated>2023-08-02T00:00:00Z</updated>
+		<id>https://flc-pages.github.io/blog/2023.08.02,hello-post/</id>
+		<content type="html">&lt;p&gt;Just a simple dummy post to check stuff is working. Most probably to be removed once I get this fully setup.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
